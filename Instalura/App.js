@@ -6,6 +6,7 @@ import {
 import {Foto} from './src/Components/Foto';
 import {Cabecalho} from './src/Components/Cabecalho';
 import lerFotos from './src/api/feed';
+import { Comentarios } from './src/Components/Comentarios';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
               descricao={item.description}
               qntLikes={item.likes}
             />
+            <Comentarios comentarios={item.comentarios}/>
           </Fragment>}
       />
     </ScrollView>
